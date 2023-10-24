@@ -11,9 +11,8 @@ images_dir: /images/home
         <div class="intro-pane">
             <h2> Yen-Shi Wang </h2>
             <p class="intro-italic"><i> ––– dedicated C++ programmer with ability to learn things fast</i></p>
-            <p> As an M.S. student in ECE at Carnegie Mellon University (CMU), my interest lies in systems and cloud.
-                Besides experience in CPU/GPU performance tuning, ML compilers and LLVM, which are based in C++,
-                I'm also familiar with cloud services, various frameworks, and backend/frontend development.
+            <p> My most experience lies in deep learning inference, compilers, and performance optimization. I found
+                interest in writing fast C++ code, doing performace turning for both CPU and GPU, and learning how compilers work in general.
                 <br>
                 Here is my <a class="cv" href="/assets/pdf/Yen-Shi-Wang-CV.pdf">Curriculum Vitae</a> .
             </p>
@@ -22,6 +21,47 @@ images_dir: /images/home
     <hr class="horizontal-line">
     <h3 class="section-title">Experience</h3>
     <div class="project-list">
+        <div class="project">
+            <div class="project-intro">
+                <h3 class="project-title">Senior Deep Learning SWE at
+                    <a href="https://www.nvidia.com/">Nvidia</a>
+                </h3>
+                <h3 class="project-time">Jul. 2022 - Present</h3>
+
+                <p>
+                Implemented multi-device TensorRT runtime in C++ using <a href="https://developer.nvidia.com/nccl">NCCL</a> to support inference with multiple nodes.
+                Wrote <a href="https://github.com/NVIDIA/TensorRT/tree/v9.1.0/demo/NeMo">TensorRT v9.1.0 NeMo demo</a> from scratch in Python,
+                which supports FP8 and FP16 inference on GPT-3 style LLM network.
+                Added FP8 inference support for NeMo and profiled demo runtime and improved generation decoding latency by 30%.
+                </p>
+            </div>
+
+            <div class="project-photo">
+                <a href="https://developer.nvidia.com/tensorrt">
+                    <img src="{{ layout.images_dir }}/tensorrt.png" />
+                </a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-intro">
+                <h3 class="project-title">Deep Learning SWE at
+                    <a href="https://www.nvidia.com/">Nvidia</a>
+                </h3>
+                <h3 class="project-time">Mar. 2021 - Jun. 2022</h3>
+
+                <p>
+                Be point of contact for TensorRT Consistency Checker and implemented deconvolution node validation from scratch.
+                Improved all safety layer tests, performed code inspection, and went through verification to confrom ISO 26262 safety standard.
+                Debug C++ code with GDB and fix software bugs caused by use after free, random failures, and type errors.
+                </p>
+            </div>
+
+            <div class="project-photo">
+                <a href="https://developer.nvidia.com/tensorrt">
+                    <img src="{{ layout.images_dir }}/tensorrt.png" />
+                </a>
+            </div>
+        </div>
         <div class="project">
             <div class="project-intro">
                 <h3 class="project-title">Performance SWE Intern at
@@ -34,16 +74,6 @@ images_dir: /images/home
                     be disclosed before the results are public.) Actively involved in code review and group discussion
                     in a remote working environment.
                 </p>
-                <!--
-                    I participated in ONNC project, and implemented 21 optimization passes
-                    (<a href="https://github.com/ONNC/onnc/tree/master/lib/Transforms/Optimizations">code</a>)
-                    for trained classification models.
-                    After completing essential optimizations and getting familiarity with
-                    <a href="http://nvdla.org/index.html">NVDLA</a>,
-                    I initiated quantization framework for ONNC to translate 32-bit FP models
-                    into 8-bit INT and fill in all parameters of converters described
-                    <a href="http://nvdla.org/hw/v1/ias/precision.html">here</a>.
-                -->
             </div>
             <div class="project-photo">
                 <a href="https://mlperf.org/">
