@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-id-img: ../assets/img/id-small.jpg
+id-img: ../assets/img/ski-avatar.png
 images_dir: /images/home
 ---
 
@@ -10,9 +10,9 @@ images_dir: /images/home
         <div class="photo-pane"> <img src="{{ layout.id-img }}" /> </div>
         <div class="intro-pane">
             <h2> Yen-Shi Wang </h2>
-            <p class="intro-italic"><i> ––– dedicated C++ programmer with ability to learn things fast</i></p>
-            <p> My most experience lies in deep learning inference, compilers, and performance optimization. I found
-                interest in writing fast C++ code, doing performace turning for both CPU and GPU, and learning how compilers work in general.
+            <p class="intro-italic"><i> ––– continual learning as AI does</i></p>
+            <p> Experiences in deep learning inference, compilers, and performance optimization. I found interest in
+                learning new LLM model operators, doing performace turning for both CPU and GPU, and learning how compilers work in general.
                 <br>
                 Here is my <a class="cv" href="/assets/pdf/Yen-Shi-Wang-CV.pdf">Curriculum Vitae</a> .
             </p>
@@ -26,7 +26,28 @@ images_dir: /images/home
                 <h3 class="project-title">Senior Deep Learning SWE at
                     <a href="https://www.nvidia.com/">Nvidia</a>
                 </h3>
-                <h3 class="project-time">Jul. 2022 - Present</h3>
+                <h3 class="project-time">Sep. 2024 - Present</h3>
+
+                <p>
+                As a core developer of <a href="https://developer.nvidia.com/tensorrt-rtx">TensorRT for RTX</a> from project initiation, oversee the development, testing and
+                validation, infra setup and release. Designed runtime fusion optimization and trimmed down library size
+                from 1GB to be under 200MB. Made just-in-time compilation workflow possible and brought optimized deep
+                learning inference closer to users of NVIDIA RTX GPUs.
+                </p>
+            </div>
+
+            <div class="project-photo">
+                <a href="https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime/">
+                    <img src="{{ layout.images_dir }}/tensorrt-rtx.png" />
+                </a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-intro">
+                <h3 class="project-title">Senior Deep Learning SWE at
+                    <a href="https://www.nvidia.com/">Nvidia</a>
+                </h3>
+                <h3 class="project-time">Jul. 2022 - Sep. 2024</h3>
 
                 <p>
                 Implemented multi-device TensorRT runtime in C++ using <a href="https://developer.nvidia.com/nccl">NCCL</a> to support inference with multiple nodes.
